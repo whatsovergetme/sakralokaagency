@@ -1,1 +1,16 @@
-
+{
+  "hosting": {
+    "public": "public",
+    "headers": [
+      {
+        "source": "/download/**",
+        "headers": [
+          {
+            "key": "Content-Disposition",
+            "value": "attachment"
+          }
+        ]
+      }
+    ]
+  }
+}
